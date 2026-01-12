@@ -174,7 +174,18 @@ plt.title("ROC Curve - Customer Churn")
 plt.legend()
 plt.show()   
 
-
+# Deployable
+import joblib
+#select final model
+final_model = pipelines["gradient_boost"] # training model
+final_model.fit(xtrain, ytrain)
+# # save model
+joblib.dump(final_model, "customer_churn_model.joblib")
+#Load the model for prediction / deployment
+loaded_model = joblib.load("customer_churn_model.joblib")
+#Predict on new data
+new_ypredict = loaded_model.predict(xtest)
+print("new data predictions by joblib:", new_ypredict)
 
 
 
