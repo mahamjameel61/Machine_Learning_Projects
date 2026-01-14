@@ -20,7 +20,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # load data
-churn_data = pd.read_csv("customer_churn_dataset-training-master[1].csv", sep=',')
+churn_data = pd.read_csv("Customer_Churn_Project\customer_churn_dataset.csv", sep=',')
 print(churn_data)
 
 # EDA
@@ -32,7 +32,7 @@ print(churn_data.info())
 print(churn_data.isnull())
 print(churn_data.isnull().sum())
 
-#Data cleaning and Preprocrssing
+#Data cleaning and Preprocessing
 # handle missing values
 churn_data.fillna({
     "CustomerID" : churn_data["CustomerID"].mean(),
