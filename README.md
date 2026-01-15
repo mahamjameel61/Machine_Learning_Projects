@@ -21,9 +21,8 @@ To optimize performance, the modeling process evolved iteratively:
 **Outputs:** Binary churn prediction + probability score
 
 ### Tech Stack
-Python, Pandas & NumPy, Matplotlib, Scikit-learn, Joblib, Streamlit
+Python, Pandas & NumPy, Matplotlib, Scikit-learn, Joblib, Streamlit.
 
----
 ## 🖥 Application Features
 🔹 CSV Upload & Data Preview
 
@@ -39,7 +38,6 @@ Python, Pandas & NumPy, Matplotlib, Scikit-learn, Joblib, Streamlit
 
 🔹 Model Transparency
 
----
 ## 📈 Business Impact
 - Helps businesses **reduce churn**
 - Enables **data-driven decision making**
