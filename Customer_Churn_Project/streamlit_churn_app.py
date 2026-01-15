@@ -25,7 +25,7 @@ if file:
     st.write(df.describe())
 
 # calling saved trained model by joblib
-trained_model = joblib.load("customer_churn_model.joblib")   #trained model from churn_codefile (relative_path)  
+trained_model = joblib.load("Customer_Churn_Project\customer_churn_model.joblib")   #trained model from churn_codefile (relative_path)  
 
 # Sidebar – Customer (for user_inputs)
 st.sidebar.header("🧾 Customer Information")
