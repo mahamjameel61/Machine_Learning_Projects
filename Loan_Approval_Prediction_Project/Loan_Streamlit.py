@@ -34,7 +34,7 @@ with tab1:
     loan_amount = st.sidebar.slider("Loan Amount",min_value=300000, max_value=39500000, value=30000000)
     loan_term = st.sidebar.slider("Loan Term (Years)", min_value=2, max_value=20, value=5)
     cibil_score = st.sidebar.slider("CIBIL Score", min_value=300, max_value=900, value=700)
-    loan_to_income_ratio = st.sidebar.slider("Loan to Income Ratio", min_value=0.0, max_value= 5.0, value=2.0)
+    loan_to_income_ratio = st.sidebar.slider("Loan to Income Ratio", min_value=0.0, max_value= 12.0, value=2.0)
     total_assets_value = st.sidebar.slider("Total Assets Value", min_value=0, max_value=80000000,  value=20000000)
     education = st.sidebar.selectbox("Education", ["Graduate", "Not Graduate"])
     self_employed = st.sidebar.selectbox("Self Employed", ["Yes", "No"])
