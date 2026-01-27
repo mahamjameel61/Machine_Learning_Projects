@@ -18,14 +18,21 @@ tab1, tab2 = st.tabs(["Loan Prediction", "Model Comparison"])
 #Tab1 : Model Prediction
 with tab1:
     #csv upload
-    file = st.file_uploader("upload your csv file:", type=["csv"])
-    if file:
-        df = pd.read_csv(file)
+    file1 = st.file_uploader("upload your csv file:", type=["csv"])
+    if file1:
+        df = pd.read_csv(file1)
         st.subheader("data preview")
         st.dataframe(df)
 
         st.subheader("Summary Stats") 
         st.write(df.describe())
+    # file 2 to upload data after feature Extraction, user input would based on this dataset.
+    file2 = st.file_uploader("uplaod after feature_engineering csv file:", type="csv")
+    if file2:
+        df = pd.read_csv(file2)
+        st.subheader("data preview")
+        st.dataframe(df)
+
     # sidebar for user inputs
     st.sidebar.header(" 🧾Loan Applicants Details")
 
@@ -34,7 +41,7 @@ with tab1:
     loan_amount = st.sidebar.slider("Loan Amount",min_value=300000, max_value=39500000, value=30000000)
     loan_term = st.sidebar.slider("Loan Term (Years)", min_value=2, max_value=20, value=5)
     cibil_score = st.sidebar.slider("CIBIL Score", min_value=300, max_value=900, value=700)
-    loan_to_income_ratio = st.sidebar.slider("Loan to Income Ratio", min_value=0.0, max_value= 12.0, value=2.0)
+    loan_to_income_ratio = st.sidebar.slider("Loan to Income Ratio", min_value=0.0, max_value= 5.0, value=2.0)
     total_assets_value = st.sidebar.slider("Total Assets Value", min_value=0, max_value=80000000,  value=20000000)
     education = st.sidebar.selectbox("Education", ["Graduate", "Not Graduate"])
     self_employed = st.sidebar.selectbox("Self Employed", ["Yes", "No"])

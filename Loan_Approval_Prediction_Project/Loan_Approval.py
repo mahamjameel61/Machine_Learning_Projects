@@ -63,6 +63,11 @@ y = loan_data['loan_status'].map({" Rejected": 0, " Approved" : 1})
 print(x)
 print(y)
 
+## saving dataset after Feature Enginnering 
+x_df = pd.DataFrame(x)
+x_df.to_csv("After_Feature_Engineering_Dataset.csv")
+print(x_df)
+
 """
 I explicitly mapped loan status to binary values where Rejected = 0 and Approved = 1 
 to ensure clear class interpretation and consistent probability meaning.
