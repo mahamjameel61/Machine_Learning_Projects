@@ -34,8 +34,7 @@ The trained model is deployed as an **interactive Streamlit web application**, e
 ## Machine Learning Models & Evaluation
 **Trained models**:
 - Logistic Regression, Random Forest, Gradient Boosting, **XGBoost (Final)**  
-**Evaluation metrics**:
-- Precision, Recall, F1-score, ROC-AUC  
+**Evaluation metrics**: Precision, Recall, F1-score, ROC-AUC  
 All models use **Scikit-learn Pipelines** with proper preprocessing to prevent data leakage.
 
 **Threshold Optimization**
