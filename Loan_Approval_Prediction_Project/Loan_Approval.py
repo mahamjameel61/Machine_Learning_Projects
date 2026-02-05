@@ -180,8 +180,6 @@ plt.title("Model Performance Comparison")
 plt.ylabel("Score")
 plt.show()
  
-#metrics_df.to_csv("model_metrics.csv", index=False)
-
 #---- Model Evaluation----
 #Threshold
 pipe = model4 # final_model xgboost
